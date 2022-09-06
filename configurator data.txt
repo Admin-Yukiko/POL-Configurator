@@ -1,0 +1,61 @@
+pol.cfg
+
+('UoDataFileRoot', 'RealmDataPath', 'WorldDataPath', 'PidFilePath', 'ListenPort', 'ClientEncryptionVersion', 'CountResourceTiles', 
+'RetainCleartextPasswords', 'AccountDataSave', 'MinCmdlevelToLogin', 'InactivityWarningTimeout', 'InactivityDisconnectTimeout', 'MinCmdLvlToIgnoreInactivity', 
+'ShutdownSaveType', 'SingleThreadDecay', 'ThreadDecayStatistics', 'MaximumClients', 'MaximumClientsBypassCmdLevel', 'CharacterSlots', 
+'AllowMultiClientsPerAccount', 'EnforceMountObjtype', 'DiscardOldEvents', 'WatchRpm', 'WatchSysload', 'LogSysload', 'LogScriptCycles', 
+'RunawayScriptThreshold', 'ReportRunToCompletionScripts', 'ReportCriticalScripts', 'WatchMapCache', 'ShowSpeechColors', 'ThreadStacktracesWhenStuck', 
+'ShowRealmInfo', 'DisableNagle', 'UseSingleThreadLogin', 'ProfileCProps', 'MaxTileID', 'MaxObjtype', 'MaxCallDepth', 
+'CacheInteractiveScripts', 'EnableAssertions', 'AssertionFailureAction', 'DumpStackOnAssertionFailure', 'EnableDebugLog', 'DebugLevel', 'DebugPort', 
+'DebugPassword', 'DebugLocalOnly', 'MiniDumpType', 'DisplayUnknownPackets', 'LogLevel', 'Verbose', 'ReportMissingConfigs', 'TimestampEveryLine', 
+'IgnoreLoadErrors', 'InhibitSaves', 'RequireSpellbooks', 'EnableSecureTrading' 'WebServer', 'WebServerPort', 'WebServerLocalOnly', 
+'WebServerDebug', 'WebServerPassword', 'ExpLosChecksMap', 'ReportCrashsAutomatically', 'ReportAdminEmail', 'ReportServer', 'ReportURL')
+
+
+(Str, Str, Str, Str, Str, Tstr, Bool, 
+Bool, Bool, Tstr, Str, Str, Tstr, 
+Tstr, Bool, Bool, Str, Str, Tstr, 
+Bool, Bool, Bool, Bool, Bool, Bool, Bool, 
+Str, Bool, Bool, Bool, Bool, Bool, 
+Bool, Bool, Bool, Bool, Str, Str, Str, 
+Bool, Bool, Tstr, Bool, Bool, Str, Str, 
+Str, Bool, Tstr, Bool, Str, Bool, Bool, Bool, 
+Bool, Bool, Bool, Bool, Bool, Str, Bool, 
+Bool, Str, Bool, Bool, Str, Str, Str)
+
+68
+
+serverspedopt.cfg
+// Core Handles Tags needs attention. InvulTag also.
+
+('StartingGold', 'NewbieStartingEquipment', 'SupportFaces', 'CoreSendsSeason', 'CoreGuildMessages', 'CoreHandledTags',  'SpeedhackPrevention', 'SpeedHack_MountRunDelay', 
+'SpeedHack_MountWalkDelay', 'SpeedHack_FootRunDelay', 'SpeedHack_FootWalkDelay', 'ScriptedMerchantHandlers', 'UseTileFlagPrefix', 'DefaultDoubleclickRange', 
+'DoubleClickWait', 'DefaultLightLevel', 'CoreSendsCaps', 'DefaultAttributeCap', 'CoreHandledLocks', 'AllowMovingTrade', 'ForceNewObjCachePackets', 'PrivacyPaperdoll', 
+'SeperateSpeechTokens', 'SpeechRange', 'WhisperRange', 'YellRange', 'CarryingCapacityMod', 'DefaultCharacterHeight', 'SendStatLocks', 'UseContainerSlots', 'MaxContainerSlots', 
+'EventVisibilityCoreChecks', 'MovementUsesStamina', 'AllowSecureTradingInWarMode', 'TotalStatsAtCreation', 'DecayItems', 'DefaultDecayTime', 'DefaultContainerMaxItems', 
+'DefaultContainerMaxWeight', 'UOFeatureEnable', 'HiddenTurnsCount', 'InvulTag', 'MaxPathFindRange', 'ItemColorMask', 'HonorUnequipScriptOnDeath', 
+'MobilesBlockNpcMovement', 'UseWinLFH')
+
+
+(Str, Bool, Bool, Bool, Bool, Str, Bool, Str, 
+Str, Str, Str, Bool, Bool, Str, 
+Str, Str, Bool, Str, Bool, Bool, Bool, Bool, 
+Bool, Str, Str, Str, Str, Str, Bool, Bool, Str, 
+Bool, Bool, Bool, Str, Bool, Str, Str, 
+Str, Str, Bool, Tstr, Str, Str, Bool, 
+Bool, Bool)
+
+47
+
+combat.cfg
+
+('DisplayParrySuccessMessages', 'WarmodeInhibitsRegen', 'WarModeDelay', 'SingleCombat', 'CoreHitSounds', 'ScriptedAttackChecks', 'ResetSwingOnTurn', 
+'SendSwingPacket', 'SendDamagePacket', 'AttackWhileFrozen', 'SendAttackMsg')
+
+(Bool, Bool, Bool, Bool, Bool, Bool, Bool, 
+Bool, Bool, Bool, Bool)
+
+11
+
+
+

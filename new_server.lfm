@@ -1,0 +1,73 @@
+object NewPOLServer: TNewPOLServer
+  Left = 127
+  Height = 538
+  Top = 352
+  Width = 684
+  Caption = 'Create a New POL Server'
+  ClientHeight = 538
+  ClientWidth = 684
+  LCLVersion = '2.0.2.0'
+  object DownloadPOLCore: TButton
+    Left = 240
+    Height = 44
+    Top = 271
+    Width = 152
+    Caption = 'Download POL Core'
+    OnClick = DownloadPOLCoreClick
+    TabOrder = 0
+  end
+  object DownloadPOLDistro: TButton
+    Left = 240
+    Height = 44
+    Top = 198
+    Width = 152
+    Caption = 'Download the POl Distro'
+    OnClick = DownloadPOLDistroClick
+    TabOrder = 1
+  end
+  object Label6: TLabel
+    Left = 240
+    Height = 15
+    Top = 78
+    Width = 267
+    Caption = 'Select the directory where you want to set-up POL:'
+    ParentColor = False
+  end
+  object Edit2: TEdit
+    Left = 240
+    Height = 23
+    Top = 99
+    Width = 304
+    TabOrder = 2
+    Text = 'C:\pol'
+  end
+  object Button2: TButton
+    Left = 576
+    Height = 25
+    Top = 97
+    Width = 75
+    Caption = 'Browse'
+    OnClick = Button2Click
+    TabOrder = 3
+  end
+  object OkButton: TButton
+    Left = 176
+    Height = 25
+    Top = 477
+    Width = 75
+    Caption = 'Ok'
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 424
+    Height = 25
+    Top = 477
+    Width = 75
+    Caption = 'Cancel'
+    TabOrder = 5
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    left = 611
+    top = 481
+  end
+end

@@ -1,0 +1,94 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TFormMissingFiles','FORMDATA',[
+  'TPF0'#17'TFormMissingFiles'#16'FormMissingFiles'#4'Left'#3#200#0#6'Height'#3
+  +#192#1#3'Top'#2''''#5'Width'#3#207#2#7'Caption'#6#26'Missing Files Notificat'
+  +'ion'#12'ClientHeight'#2#0#11'ClientWidth'#2#0#12'Font.CharSet'#7#12'ANSI_CH'
+  +'ARSET'#11'Font.Height'#2#243#9'Font.Name'#6#16'Liberation Serif'#10'Font.Pi'
+  +'tch'#7#10'fpVariable'#12'Font.Quality'#7#7'fqDraft'#8'OnCreate'#7#10'FormCr'
+  +'eate'#10'LCLVersion'#6#7'2.0.2.0'#0#9'TCheckBox'#19'UOClientCfgCheckBox'#4
+  +'Left'#3#156#1#6'Height'#2#19#3'Top'#3#192#0#5'Width'#2'S'#7'Caption'#6#12'u'
+  +'oclient.cfg'#8'OnChange'#7#25'UOClientCfgCheckBoxChange'#8'TabOrder'#2#0#0#0
+  +#9'TCheckBox'#18'ServersCfgCheckBox'#4'Left'#3#156#1#6'Height'#2#19#3'Top'#2
+  +'x'#5'Width'#2'O'#7'Caption'#6#11'servers.cfg'#8'TabOrder'#2#1#0#0#9'TCheckB'
+  +'ox'#22'ServspecoptCfgCheckBox'#4'Left'#3#156#1#6'Height'#2#19#3'Top'#3#144#0
+  +#5'Width'#2'j'#7'Caption'#6#15'servspecopt.cfg'#8'TabOrder'#2#2#0#0#9'TCheck'
+  +'Box'#16'WatchCfgCheckBox'#4'Left'#3#156#1#6'Height'#2#19#3'Top'#3#168#0#5'W'
+  +'idth'#2'H'#7'Caption'#6#9'watch.cfg'#8'TabOrder'#2#3#0#0#9'TCheckBox'#19'Ec'
+  +'ompileCfgCheckBox'#4'Left'#3#156#1#6'Height'#2#19#3'Top'#2'H'#5'Width'#2'W'
+  +#7'Caption'#6#12'ecompile.cfg'#8'TabOrder'#2#4#0#0#9'TCheckBox'#17'CombatCfg'
+  +'CheckBox'#4'Left'#3#156#1#6'Height'#2#19#3'Top'#2'0'#5'Width'#2'O'#7'Captio'
+  +'n'#6#10'combat.cfg'#8'TabOrder'#2#5#0#0#5'TMemo'#16'MissingFilesMemo'#4'Lef'
+  +'t'#2'+'#6'Height'#3'i'#1#3'Top'#2'0'#5'Width'#3#29#1#12'Font.CharSet'#7#12
+  +'ANSI_CHARSET'#11'Font.Height'#2#243#9'Font.Name'#6#16'Liberation Serif'#10
+  +'Font.Pitch'#7#10'fpVariable'#12'Font.Quality'#7#7'fqDraft'#13'Lines.Strings'
+  +#1#12'X'#3#0#0'The check boxes list the files necessary for POL to run or to'
+  +' be configured properly. You have been shown this window because some, or a'
+  +'ll, of these files are missing from your POL installation. The boxes that a'
+  +'re checked indicate the missing files. The Configurator can create these fi'
+  +'les with default settings for you. If you would like the Configurator to do'
+  +' that then click the "Yes" button and they will be created. Click the "No" '
+  +'button if you do not want the Configurator to create these files. It is hig'
+  +'hly recommended that if these files are missing that you let the Configurat'
+  +'or create them to ensure that they contain all of the current settings for '
+  +'POL. You can also uncheck the files you do not want created but keep in min'
+  +'d that POL may not run without some of these files and the Configurator wil'
+  +'l exit if all of these files are not present.'#6#0#12'+'#4#0#0'If you are u'
+  +'nsure whether the files that DO exist in your POL installation are up to da'
+  +'te with the current list of settings you can check all of the boxes for the'
+  +' *.cfg files and the Configurator will replace all of POL''s required files'
+  +' with the default settings. This is recommended the first time you use the '
+  +'Configurator on a POL installation even if you are certain your settings fi'
+  +'les have the current configuration files. POL has a myriad of settings and '
+  +'though new ones are not added often, new settings may not get added to your'
+  +' own files unless you are persistent in checking the core-changes.txt file '
+  +'included with each Core update. Also, if you are missing any of these files'
+  +' and you do not allow the Configurator to create the missing files it will '
+  +'abort and close. You must have valid copies of these files in your POL inst'
+  +'allation for the Configurator to run. The Configurator will not run without'
+  +' all of these necessary files. It will pop-up a message telling you so if y'
+  +'ou leave this dialog box without letting the programme replace the missing '
+  +'files.'#6#0#6#203'If you are missing the uoclient.cfg file you will also ne'
+  +'ed to tell the Configurator where you want to save the file. The directory '
+  +'you save it in must have a valid, enabled, pkg.cfg file in that folder.'#6#0
+  +#12#25#1#0#0'One last thing. If you are starting a new server it is highly r'
+  +'ecommended that you check every check box on this window and let the Config'
+  +'urator create the default files for you. The settings in the default files '
+  +'are configured to work with the current client and POL Core version.'#0#10
+  +'ParentFont'#8#8'ReadOnly'#9#10'ScrollBars'#7#14'ssAutoVertical'#8'TabOrder'
+  +#2#6#0#0#6'TLabel'#6'Label1'#4'Left'#2'+'#6'Height'#2#15#3'Top'#2#28#5'Width'
+  +#3#195#0#7'Caption'#6'!Why am I being shown this window?'#12'Font.CharSet'#7
+  +#12'ANSI_CHARSET'#11'Font.Height'#2#243#9'Font.Name'#6#16'Liberation Serif'
+  +#10'Font.Pitch'#7#10'fpVariable'#12'Font.Quality'#7#7'fqDraft'#10'Font.Style'
+  +#11#6'fsBold'#0#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label2'#4
+  +'Left'#3#156#1#6'Height'#2#15#3'Top'#2#28#5'Width'#2'O'#7'Caption'#6#14'Miss'
+  +'ing Files:'#12'Font.CharSet'#7#12'ANSI_CHARSET'#11'Font.Height'#2#243#9'Fon'
+  +'t.Name'#6#16'Liberation Serif'#10'Font.Pitch'#7#10'fpVariable'#12'Font.Qual'
+  +'ity'#7#7'fqDraft'#10'Font.Style'#11#6'fsBold'#0#11'ParentColor'#8#10'Parent'
+  ,'Font'#8#0#0#6'TLabel'#6'Label3'#4'Left'#3'|'#1#6'Height'#2#15#3'Top'#3'_'#1
+  +#5'Width'#3'+'#1#7'Caption'#6':Shall I install the default files for those c'
+  +'hecked above?'#12'Font.CharSet'#7#12'ANSI_CHARSET'#11'Font.Height'#2#243#9
+  +'Font.Name'#6#16'Liberation Serif'#10'Font.Pitch'#7#10'fpVariable'#12'Font.Q'
+  +'uality'#7#7'fqDraft'#10'Font.Style'#11#6'fsBold'#0#11'ParentColor'#8#10'Par'
+  +'entFont'#8#0#0#7'TButton'#18'YesInstallFilesBtn'#4'Left'#3#175#1#6'Height'#2
+  +#25#3'Top'#3#137#1#5'Width'#2'K'#7'Caption'#6#3'Yes'#12'Font.CharSet'#7#12'A'
+  +'NSI_CHARSET'#11'Font.Height'#2#243#9'Font.Name'#6#16'Liberation Serif'#10'F'
+  +'ont.Pitch'#7#10'fpVariable'#12'Font.Quality'#7#7'fqDraft'#10'Font.Style'#11
+  +#6'fsBold'#0#7'OnClick'#7#23'YesInstallFilesBtnClick'#10'ParentFont'#8#8'Tab'
+  +'Order'#2#7#0#0#7'TButton'#17'NoInstallFilesBtn'#4'Left'#3'3'#2#6'Height'#2
+  +#25#3'Top'#3#137#1#5'Width'#2'K'#7'Caption'#6#2'No'#12'Font.CharSet'#7#12'AN'
+  +'SI_CHARSET'#11'Font.Height'#2#243#9'Font.Name'#6#16'Liberation Serif'#10'Fo'
+  +'nt.Pitch'#7#10'fpVariable'#12'Font.Quality'#7#7'fqDraft'#10'Font.Style'#11#6
+  +'fsBold'#0#7'OnClick'#7#22'NoInstallFilesBtnClick'#10'ParentFont'#8#8'TabOrd'
+  +'er'#2#8#0#0#9'TCheckBox'#14'POLCfgCheckBox'#4'Left'#3#156#1#6'Height'#2#19#3
+  +'Top'#2'`'#5'Width'#2'9'#7'Caption'#6#7'pol.cfg'#8'TabOrder'#2#9#0#0#7'TButt'
+  +'on'#15'UOClientSaveBtn'#4'Left'#3'i'#2#6'Height'#2#25#3'Top'#3#18#1#5'Width'
+  +#2'K'#7'Caption'#6#6'Browse'#7'OnClick'#7#20'UOClientSaveBtnClick'#8'TabOrde'
+  +'r'#2#10#0#0#5'TEdit'#15'UOClientDirEdit'#4'Left'#3#156#1#6'Height'#2#23#3'T'
+  +'op'#3#18#1#5'Width'#3#196#0#8'ReadOnly'#9#8'TabOrder'#2#11#0#0#6'TLabel'#13
+  +'UOClientLabel'#4'Left'#3#156#1#6'Height'#2'-'#3'Top'#3#224#0#5'Width'#3#245
+  +#0#7'Caption'#6'nTo place the uoclient.cfg file you must specify'#13#10'a va'
+  +'lid enabled package directory containing'#13#10'a pkg.cfg file.'#11'ParentC'
+  +'olor'#8#0#0#22'TSelectDirectoryDialog'#22'SelectDirectoryDialog1'#4'left'#3
+  +'X'#2#3'top'#2#16#0#0#0
+]);

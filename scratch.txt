@@ -1,0 +1,43 @@
+
+
+and
+0 1 0 0
+1 1 1 1
+0 1 0 0
+
+or
+1 0 1 1
+0 0 1 0
+1 0 1 1
+
+xor
+1 1 1 0
+0 1 1 0
+1 0 0 0
+
+IntToStr(StrToInt(BoolToStr(EightZero.Checked)) * -1);
+
+
+
+
+Str Str Str Str Str Tstr Bool 
+Bool Bool Tstr Str Str Tstr 
+Tstr Bool Bool Str Str Tstr 
+Bool Bool Bool Bool Bool Bool Bool 
+Str Bool Bool Bool Bool Bool 
+Bool Bool Bool Bool Str Str Str 
+Bool Bool Tstr Bool Bool Str Str 
+Str Bool Tstr Bool Str Bool Bool Bool 
+Bool Bool Bool Bool Bool Str Bool 
+Bool Str Bool Bool Str Str Str
+
+68
+
+serverspedopt.cfg
+// Core Handles Tags needs attention. InvulTag also.
+
+
+
+2335 This is the start of writing POL's cfg files.
+     I need to break each file's read and write
+	 operations into separate procedures.

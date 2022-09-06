@@ -1,0 +1,23 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TNewPOLServer','FORMDATA',[
+  'TPF0'#13'TNewPOLServer'#12'NewPOLServer'#4'Left'#2#127#6'Height'#3#26#2#3'To'
+  +'p'#3'`'#1#5'Width'#3#172#2#7'Caption'#6#23'Create a New POL Server'#12'Clie'
+  +'ntHeight'#3#26#2#11'ClientWidth'#3#172#2#10'LCLVersion'#6#7'2.0.2.0'#0#7'TB'
+  +'utton'#15'DownloadPOLCore'#4'Left'#3#240#0#6'Height'#2','#3'Top'#3#15#1#5'W'
+  +'idth'#3#152#0#7'Caption'#6#17'Download POL Core'#7'OnClick'#7#20'DownloadPO'
+  +'LCoreClick'#8'TabOrder'#2#0#0#0#7'TButton'#17'DownloadPOLDistro'#4'Left'#3
+  +#240#0#6'Height'#2','#3'Top'#3#198#0#5'Width'#3#152#0#7'Caption'#6#23'Downlo'
+  +'ad the POl Distro'#7'OnClick'#7#22'DownloadPOLDistroClick'#8'TabOrder'#2#1#0
+  +#0#6'TLabel'#6'Label6'#4'Left'#3#240#0#6'Height'#2#15#3'Top'#2'N'#5'Width'#3
+  +#11#1#7'Caption'#6'2Select the directory where you want to set-up POL:'#11'P'
+  +'arentColor'#8#0#0#5'TEdit'#5'Edit2'#4'Left'#3#240#0#6'Height'#2#23#3'Top'#2
+  +'c'#5'Width'#3'0'#1#8'TabOrder'#2#2#4'Text'#6#6'C:\pol'#0#0#7'TButton'#7'But'
+  +'ton2'#4'Left'#3'@'#2#6'Height'#2#25#3'Top'#2'a'#5'Width'#2'K'#7'Caption'#6#6
+  +'Browse'#7'OnClick'#7#12'Button2Click'#8'TabOrder'#2#3#0#0#7'TButton'#8'OkBu'
+  +'tton'#4'Left'#3#176#0#6'Height'#2#25#3'Top'#3#221#1#5'Width'#2'K'#7'Caption'
+  +#6#2'Ok'#8'TabOrder'#2#4#0#0#7'TButton'#7'Button3'#4'Left'#3#168#1#6'Height'
+  +#2#25#3'Top'#3#221#1#5'Width'#2'K'#7'Caption'#6#6'Cancel'#8'TabOrder'#2#5#0#0
+  +#22'TSelectDirectoryDialog'#22'SelectDirectoryDialog1'#4'left'#3'c'#2#3'top'
+  +#3#225#1#0#0#0
+]);

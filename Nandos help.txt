@@ -1,0 +1,16 @@
+are you using ShellExecute?
+
+I never remember if it's /K or /C to give a command directly to the cmd
+
+cmd /C "cd /D <pol directory> & uoconvert ..."
+would execute the command prompt, run cd and then uoconvert
+=P
+
+but this one would also open a console
+would just need a & pause in the end
+
+http://wiki.freepascal.org/Executing_External_Programs
+
+https://www.servuo.com/threads/otim-pyres-bookmarks.8067/
+
+Might be useful

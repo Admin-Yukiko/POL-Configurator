@@ -1,0 +1,48 @@
+{ This is an automatically generated lazarus resource file }
+
+LazarusResources.Add('TExtrnProgFrm','FORMDATA',[
+  'TPF0'#13'TExtrnProgFrm'#12'ExtrnProgFrm'#4'Left'#3'l'#2#6'Height'#3'5'#1#3'T'
+  +'op'#3#165#0#5'Width'#3#222#1#7'Caption'#6'.Choose a program to associate wi'
+  +'th the button:'#12'ClientHeight'#3'5'#1#11'ClientWidth'#3#222#1#10'OnActiva'
+  +'te'#7#12'FormActivate'#10'LCLVersion'#6#7'2.2.0.4'#0#5'TEdit'#12'ProgNameEd'
+  +'it'#4'Left'#2'8'#6'Height'#2#23#3'Top'#2'?'#5'Width'#3#134#0#8'TabOrder'#2#0
+  +#0#0#5'TEdit'#11'ProgLocEdit'#4'Left'#2'8'#6'Height'#2#23#3'Top'#2'm'#5'Widt'
+  +'h'#3#24#1#8'ReadOnly'#9#8'TabOrder'#2#2#0#0#6'TLabel'#13'ProgNameLabel'#4'L'
+  +'eft'#2'8'#6'Height'#2#15#3'Top'#2')'#5'Width'#3#160#0#7'Caption'#6#30'Enter'
+  +' the name for the button:'#0#0#6'TLabel'#12'ProgLocLabel'#4'Left'#2'8'#6'He'
+  +'ight'#2#15#3'Top'#2'\'#5'Width'#2'_'#7'Caption'#6#16'Program Location'#0#0#7
+  +'TButton'#13'ProgBrowseBtn'#4'Left'#3'e'#1#6'Height'#2#25#3'Top'#2'k'#5'Widt'
+  +'h'#2'K'#7'Caption'#6#6'Browse'#7'OnClick'#7#18'ProgBrowseBtnClick'#8'TabOrd'
+  +'er'#2#1#0#0#7'TButton'#5'OkBtn'#4'Left'#3#145#0#6'Height'#2#25#3'Top'#3#221
+  +#0#5'Width'#2'K'#7'Caption'#6#3'O)k'#7'OnClick'#7#10'OkBtnClick'#8'TabOrder'
+  +#2#3#0#0#7'TButton'#9'CancelBtn'#4'Left'#3#10#1#6'Height'#2#25#3'Top'#3#221#0
+  +#5'Width'#2'K'#7'Caption'#6#7'C)ancel'#7'OnClick'#7#14'CancelBtnClick'#8'Tab'
+  +'Order'#2#4#0#0#6'TLabel'#6'Label1'#4'Left'#3#145#0#6'Height'#2#15#3'Top'#3
+  +#199#0#5'Width'#3#185#0#7'Caption'#6'$Click Ok to save or Cancel to abort.'#0
+  +#0#6'TLabel'#10'StartinDir'#4'Left'#2'8'#6'Height'#2#15#3'Top'#3#142#0#5'Wid'
+  +'th'#3#145#0#7'Caption'#6#29'Start-in Directory (optional)'#0#0#5'TEdit'#14
+  +'StartInDirEdit'#4'Left'#2'8'#6'Height'#2#23#4'Hint'#12#0#1#0#0'Some program'
+  +'s need this set to the directory in which'#13#10'they reside in order to ru'
+  +'n. Most wil run without setting'#13#10'a starting directory. If you encount'
+  +'er issues with the'#13#10'program you have setup, try setting the starting'
+  +#13#10'directory to the program''s location.'#3'Top'#3#159#0#5'Width'#3#24#1
+  +#8'ReadOnly'#9#8'TabOrder'#2#5#0#0#7'TButton'#16'StartInDirBrowse'#4'Left'#3
+  +'e'#1#6'Height'#2#25#4'Hint'#12#0#1#0#0'Some programs need this set to the d'
+  +'irectory in which'#13#10'they reside in order to run. Most wil run without '
+  +'setting'#13#10'a starting directory. If you encounter issues with the'#13#10
+  +'program you have setup, try setting the starting'#13#10'directory to the pr'
+  +'ogram''s location.'#3'Top'#3#157#0#5'Width'#2'K'#7'Caption'#6#6'Browse'#7'O'
+  +'nClick'#7#21'StartInDirBrowseClick'#8'TabOrder'#2#6#0#0#9'TCheckBox'#16'Cle'
+  +'arBtnCheckBox'#4'Left'#2'9'#6'Height'#2#19#4'Hint'#6'[This will set the but'
+  +'ton to "<empty>" so it can be setup for'#13#10'a different external program'
+  +'.'#3'Top'#3#17#1#5'Width'#3'd'#1#7'Caption'#6'@Check this box and click the'
+  +' OK button to clear the button data.'#8'TabOrder'#2#7#0#0#11'TOpenDialog'#11
+  +'OpenDialog1'#5'Title'#6'/Choose a file to be associated with the button:'#10
+  +'DefaultExt'#6#4'.exe'#6'Filter'#6'(Executable Files|*.exe|Batch Files|*.bat'
+  +#11'FilterIndex'#2#0#10'InitialDir'#6#3'C:\'#4'Left'#3#152#1#3'Top'#3'$'#1#0
+  +#0#11'TActionList'#11'ActionList1'#4'Left'#3'h'#1#3'Top'#3'$'#1#0#7'TAction'
+  +#5'OkAct'#7'Caption'#6#5'OkAct'#9'OnExecute'#7#10'OkBtnClick'#8'ShortCut'#4
+  +'O'#128#0#0#0#0#7'TAction'#9'CancelAct'#7'Caption'#6#9'CancelAct'#9'OnExecut'
+  +'e'#7#14'CancelBtnClick'#8'ShortCut'#4'C'#128#0#0#0#0#0#22'TSelectDirectoryD'
+  +'ialog'#22'SelectDirectoryDialog1'#4'Left'#3'8'#1#3'Top'#3'$'#1#0#0#0
+]);

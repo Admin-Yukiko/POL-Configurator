@@ -1,0 +1,89 @@
+ Instead of settings for each cfg file I categorized the settings into three main categories, Server Settings, Game Play Settings, and Logging and Error Reporting.
+
+
+
+
+POL Configurator Documentation
+
+The POL Configurator is attempt to make configuring POL as easy and straightforward as possible. The POL emulator
+is very flexible from both a programming (scripting) perspective using eScript as well as from the various settings
+available in the configuration files that affect the Core's operation. The Core is the pol.exe file that executes your
+compiled programmes (scripts). I have attempted to provide a more user friendly environment, a graphical user interface (GUI),
+for editing three of the main config files, pol.cfg, servspecopt.cfg, and combat.cfg. This is the first release
+of the Configurator so there are other config files that will be incorporated at a later date. Rather than create
+tabs for each file I chose to break the settings up based on their behaviour. When you launch the Configurator
+you will notice the three tabs at the top of the window, Server Settings, Game Play Settings, and
+Logging and Error Reporting Behaviour.
+
+Server Settings
+The settings on this page are mostly "behind the scenes" settings that, for the most part won't directly affect
+game play or be visible in-game. There are exceptions though. The "Tags to be Displayed", "UO Feature Enable",
+and "Use Tile Prefix" are settings that do affect game play or affect a few things visible in-game.
+
+Game Play Settings
+Almost all of the settings on this page will have an effect on game play or the way a character interacts
+with the environment. They also affect things such as the length of time before a characte that is idle
+can stay logged in, whether or not the server will attempt to catch players using "speed hacks" that
+allow them to move faster than the client normally allows, and whether more than one client is able
+to be logged in to the same account simultaneously.
+
+Logging and Error Reporting Behaviour
+This page is pretty much what the title describes. Here you can enable the debug log file, useful when
+you are trying to understand why something isn't working as it should. You can also enable assertions
+and decide how you want POL to handle them. Also, from here you can tell POL what items should be printed
+in the console window. ome of those settings generate a lot of text. It can be useful information but
+you might not want that much information to be displayed. So test those settings out and see which ones
+you are comfortable with. The last thing here is error reporting. A very handy feature is you can have POL
+generate an email to be sent you you if it encounters a major problem.
+
+
+Using the POL Configurator
+Start the program by double-clicking on the POL_Configurator EXE file. You will see the configuration
+window. On startup the default settings for the cfg files are loaded. The first thing you need to do is
+tell the Configurator where your shard files are located. At the bottom of the window you will see the
+text box under the heading "Location of your POL directory. The default location is c:\pol. If yours
+is different you can either type it in the box or use the "Browse" button to select it. If you haven't
+edited the config files and don't have any custom settinngs you can go ahead and make changes to the
+default settings. When you are done just click "Save Settings" and the Configurator will save the
+settings with your changes to the appropriate cfg files. If you have some pre-configured settings
+you can click on "Load My Config Files" and the configurator will read you cfg files and any settings
+you have made that are different than the default settings that were loaded at start-up will replace
+the default settings. Then you can go ahead and change settings to your liking. When you're happy
+with the changes click "Save Settings". The Configurator will open a window informing you that
+your settings were saved. If you choose to you can just save the default settings without changing
+anything or without loading your pre-existing cfg files. Just save the default setting right after
+starting the Configurator. If at any time you wish to reload the default settings you just click
+on the "Load Default Cfgs" button.
+
+Most of the check boxes, text boxes, and combo boxes have tooltips that contain information about
+the setting. Just hover the mouse pointer over the object, text box, check box, or combo box,
+to see the tooltip. Some will display "No information given for this setting." This means that
+I could not find any info about this setting either in the available documentation or the
+corresponding cfg file.
+
+A note about the default config files: The default config files may contain more settings than
+your config files. This is because over the years the POL developers have added more settings
+to the various files. I have endeavoured to make the default files as current and up to date
+as possible. So when you load your config files into the Configurator and save the settings
+you will probably end up with larger config files than your original files but that's alright
+because now you have the additional settings that your files have been missing.
+
+That's about it. I hope you find the POL Configurator useful
+
+Feel free to email me at hopelives@outlook.com if you have any suggestions or contact me on
+the POL forums at polserver.com.
+
+Yukiko
+
+
+
+
+
+And here is a ZIP file with the POL Configurator and its own little testing environment. It contains only the three cfg files, pol, servspecopt, and combat in their proper places, the Configurator, and the default pol, servspecopt, and combat cfg files in the POL Configurator sub-directory under \polcfgtest.
+
+polcfgtest.zip
+    (4.95 MiB) Not downloaded yet
+
+It should unzip to \polcfgtest
+
+If you would test it I would appreciate it very much. Be sure to set the location of the POL directory to polcfgtest. Change as many of the settings as you want to and save the settings. Then examine pol.cfg, \config\servspecopt.cfg, and \config\combat.cfg to see if the settings were set properly. I need to make sure it is writing out the configuration files properly. If you have time to do this several times that would be fantastic.
