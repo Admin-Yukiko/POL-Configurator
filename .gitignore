@@ -48,6 +48,7 @@ lib/
 
 # Other files
 *.lps
+*.lrs
 *.res
 *.bak
 *.obj
