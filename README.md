@@ -38,7 +38,7 @@ Copyright (C) 2022  Dan Gardner eMail: hopelives@outlook.com
 
 Please note that this program uses some third party extensions whose licenses
 may NOT be compatible with the GPL 3.0 license.
-Please review the synapse 4 and Legacy MULConverter 4 license for compatibility
+Please review the Legacy MULConverter 4 license for compatibility
 
 Disclaimer
 The program binary and its source code are provided free of charge. You may
