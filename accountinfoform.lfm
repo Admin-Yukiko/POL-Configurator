@@ -1,0 +1,163 @@
+object AccountInfoEntryForm: TAccountInfoEntryForm
+  Left = 758
+  Height = 422
+  Top = 225
+  Width = 664
+  Caption = 'Developer Account Entry'
+  ClientHeight = 422
+  ClientWidth = 664
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -13
+  Font.Name = 'Liberation Serif'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  LCLVersion = '2.2.2.0'
+  object AcctsAndPolMemo: TMemo
+    Left = 37
+    Height = 294
+    Top = 57
+    Width = 299
+    Lines.Strings = (
+      'You are seeing this dialog box for one of two reasons.'
+      '1. You clicked the Clear World Data button, or'
+      '2. You do not have an accounts.txt or pol.txt file in your "world data path".'
+      ''
+      'If you got here by mistake click the "No" button!'
+      ''
+      'If you wish to clear the world data then you must enable the "Replace Accounts.txt and pol.txt" check box and enable the "Clear Game Data?" check box.'
+      ''
+      'These files are two (2) special files, accounts.txt and pol.txt. They are normally located in the "data" subdirectory of your POL installation or, if you changed the World Data Path in the server settings tab, they should be in that subdirectory. If the check box labeled "Replace Accounts.txt and pol.txt" is checked this means POL will not run. If these files are not present this might mean you are starting with a new POL installation. If this is the situation then let the Configurator create them for you. If you are using the Configurator on an existing POL server with players existing in the game then check the settings on the Server Settigs page to ensure the "World Data Path" is set correctly. The default setting is your <POL root>/data/. Note that BOTH files must be replaced even if you have one but not the other.'
+      ''
+      'Please note that if you let the Configurator add default accounts.txt and pol.txt files to your POL installation ANY existing accounts, player characters, items, NPCs, storage areas such as banks and containers, multis such as boats and multi ("placed") houses etc that are in the game world WILL BE DELETED!!! This is because POL will need a "clean slate" from which to start.'
+      ''
+      'If the check box is checked for replacement and the "Clear Game Data?" check box is checked then the User Name and Password text boxes will become active and you must enter the user name and password for the shard developer, presumably you. Note the password is not masked with dots or asterisks. After that you may click the "Yes" button to replace these files with new files.'
+      ''
+      'Remember, if you already have an existing shard click the "No" button, locate and copy the world data folder to the current POL directory that the Configurator is set to. Then check the World Data Path setting on the Server Settings page and ensure that it is set properly. It should indicate the location of the game data.'
+    )
+    ScrollBars = ssAutoVertical
+    TabOrder = 0
+  end
+  object NewActsAndPolTxtCheckBox: TCheckBox
+    Left = 381
+    Height = 19
+    Hint = 'Check this box to replace both accounts.txt and'#13#10'pol.txt.'#13#10#13#10'Note: Both files must be replaced even if you only'#13#10'need or wish to replace one. This will require a'#13#10'complete wipe of ALL shard data.'
+    Top = 57
+    Width = 192
+    Caption = 'Replace Accounts.txt and pol.txt'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 1
+  end
+  object ClearGameDataAuthorisationCheckBox: TCheckBox
+    Left = 416
+    Height = 19
+    Hint = 'If accounts.txt and/or pol.txt is checked you must'#13#10'check this box as well to authorize a data wipe of'#13#10'your POL installation. The current data will be'#13#10'backed up and the world data will be reset.'#13#10'Your shard will have no NPCs or items in the'#13#10'game world. If NPC and item spawners are con-'#13#10'figured to spawn NPCs and items will spawn as'#13#10'expected.'
+    Top = 86
+    Width = 120
+    Caption = 'Clear Game Data?'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = ClearGameDataAuthorisationCheckBoxClick
+    ParentFont = False
+    TabOrder = 2
+  end
+  object YesBtn: TButton
+    Left = 381
+    Height = 25
+    Top = 326
+    Width = 75
+    Caption = 'Yes'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = YesBtnClick
+    ParentFont = False
+    TabOrder = 3
+  end
+  object NoBtn: TButton
+    Left = 485
+    Height = 25
+    Top = 326
+    Width = 75
+    Caption = 'No'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = NoBtnClick
+    ParentFont = False
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 381
+    Height = 30
+    Top = 288
+    Width = 190
+    Caption = 'Replace accounts.txt and pol.txt?'#13#10'Note: This will delete all world data!'
+    ParentColor = False
+  end
+  object NamePassEntryLabel: TLabel
+    Left = 381
+    Height = 15
+    Top = 141
+    Width = 216
+    Caption = 'Please enter a user name and password:'
+    Enabled = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object UsernameLabel: TLabel
+    Left = 381
+    Height = 15
+    Top = 163
+    Width = 61
+    Caption = 'User Name:'
+    Enabled = False
+    ParentColor = False
+  end
+  object UserNameEdit: TEdit
+    Left = 381
+    Height = 23
+    Top = 179
+    Width = 179
+    Enabled = False
+    TabOrder = 5
+  end
+  object PasswordLabel: TLabel
+    Left = 381
+    Height = 15
+    Top = 217
+    Width = 55
+    Caption = 'Password:'
+    Enabled = False
+    ParentColor = False
+  end
+  object PasswordEdit: TEdit
+    Left = 381
+    Height = 23
+    Top = 233
+    Width = 179
+    Enabled = False
+    TabOrder = 6
+  end
+end

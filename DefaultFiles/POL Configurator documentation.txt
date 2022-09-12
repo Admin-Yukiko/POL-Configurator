@@ -7,31 +7,33 @@ Let us take a brief look at the organization of the POL Configurator's interface
 The Main User Area
 At the bottom of the Configurator's window is the main user area. That is where you tell the programme the location of your POL and UO installations, load your settings you have configured for the server and a few other useful things.
 
-I will dispense with describing the Instructions page because it is just the text of this document.
-
-Part of the Main User Area is the External Programmes launch pad located to
-the right of the programme window. This allows you to assign up to 8 programmes that you can start from the Configurator. Here you can also start POL in either test mode which runs POL using a batch file to keep the command window open to view ant errors in the event POL stops running or run POL directly if there are no errors which cause it to stop.
+Part of the Main User Area is the External Programs launch pad located to
+the right of the programme window. This allows you to assign up to 8 programmes that you can start from the Configurator.
 
 Configuring the buttons is easy. If the button’s caption is <empty> simply click on it and a dialog box will open to allow you to enter a name for the button and to locate the programme you want associated with the button. Once you have setup the button clicking on it will launch the programme
 you have associated with it.
 
-Should you decide you want to change a button’s assigned programme you can check the check box labeled Edit Mode. While that check box is enabled any button can be edited. Clicking on a button whilst in edit mode will bring up the dialog box mentioned above to allow you to reassign the button to a different programme.
+Should you decide you want to change a button’s assigned programme you can check the check box labeled Edit Mode. While that check box is enabled any button can be edited. Clicking on a button whilst in edit mode will bring up the dialog box mentioned above to allow you to reassign the button to a different program.
+
+There are two dedicated buttons at the bottom of the External Programs area. Test Launch POL and Run POL. The Test Launch POL button allows you to start POL with a batch file to keep the command window open to view any errors in the event POL aborts execution. The Run POL button runs POL directly without using a batch file. If you choose this button and the POL console window closes prematurely then use the test button and check for any error message that POL may provide.
 
 
-The tabs, or pages:
+The tabs:
+
+I will dispense with describing the Instructions page because it is just the text of this document.
+Pressing F1 from any tab will switch you to the Instructions tab.
 
 The Facet Generation Page
 This is the page you should start with. That's why it is the second page just after Instructions. You will use this page to prepare the facets, or in POL parlance, realms, for your POL server. This page will be disabled until you set the location of your UO installation.
 
 The eCompile page
-On this page you can set eCompile's settings, compile your eScript programmes (scripts) and should you desire, you can clean unnecessary files from your POL installation by performing a mass delete of certain file types.
+On this page you can set eCompile's settings, compile your eScript programs (scripts) and should you desire, you can clean unnecessary files from your POL installation by performing a mass delete of certain file types.
 
 The Log-in Settings page
 This page allows configuration of the servers.cfg and uoclient.cfg files. The servers.cfg file contains the Server name(s), IP address(es), and port numbers(s) of the game server(s) that can be logged into by  the players. The uoclient.cfg file contains, among other things, client information such as what type of encryption is used.
 
 The Server Settings page
-The settings on this page are mostly behind the scenes
- settings that, for the most part, won't directly be visible in-game. Here you can set things such as the UO expansion information and decay time settings.
+The settings on this page are mostly behind the scenes settings that, for the most part, won't directly be visible in-game. Here you can set things such as the UO expansion information and decay time settings.
 
 The Game Play Settings page
 Almost all of the settings on this page will have an effect on game play or the way a character interacts with the environment or affect some things visible in-game. Settings for maximum container items/weight and tags to be displayed are some of the settings on this page.
@@ -43,16 +45,16 @@ You can navigate between the tabs by using <Ctrl>-<Tab> to move left to right an
 
 I suggest that you read through these instructions first before attempting to use the Configurator. This is because for one thing I am not a professional documentation author. Though I think I write good documentation, I realize that is just my imagination. :) Another reason is it will give you a familiarity with the general operation of the Configurator.
 
-As I stated earlier the pages, or tabs, are broken into categories where the various functions and settings  are related. This is not perfect because some settings overlap between Core functions. One other reason some settings may be on the “wrong” page is practicality. I wanted to keep the user interface as small as possible. Some pages will be less populated with settings than others due to my organizational logic.
+As I stated earlier the pages, or tabs, are broken into categories where the various functions and settings are related. This is not perfect because some settings overlap between Core functions. One other reason some settings may be on the “wrong” page is practicality. I wanted to keep the user interface as small as possible. Some pages will be less populated with settings than others due to my organizational logic.
 
 
 Using the POL Configurator
 This documentation is an attempt to explain how to use the POL Configurator. It is not a tutorial on the various settings at your disposal in the configuration files. Most of the buttons, check boxes, text boxes, group boxes, and combo boxes have tool tips that contain information about the setting. Just hover the mouse pointer over the object to see the tooltip. The tool tips were gleaned from various sources including the POL documentation, the Core developers, and the comments in the configuration files themselves. Some will display No information given for this setting. This means that I could not find any info about this it either in the available documentation or the corresponding cfg file.
 
 The Main User Area
-At the bottom of the Configurator'is the main user interface. That is where you tell the programme the location of your POL and UO installations, load your settings you have configured for your server. You can also reload the default settings if you need to. That is useful if for some reason you need to reset the settings to a known working state. The Save Settings button is there. It, of course, saves the settings with the configuration you have set in the programme. There is a button that will allow you to clear the world data. This is useful when you are testing during development and you need to wipe all items and NPCs from the game world. Don't worry if you accidentally click that button. You are given the opportunity to cancel the operation. I have built in a couple fail safes. So before the data is deleted you have to prove you truly want to do this. If you want to see what you have to do to convince the Configurator you are serious about wiping the data then go ahead and click the button. Just don't check the check boxes in the dialog box that appears unless you are serious about wiping the data. Even then you have the opportunity to abort the operation. The last item to mention is the profiles section on the right side of the main user area. If you are working on multiple servers this gives you the opportunity to have a profile for each server. Each profile saves the location of the POL installation for that server and the UO installation for that server.
+At the bottom of the Configurator'is the main user interface. That is where you tell the program the location of your POL and UO installations, load your settings you have configured for your server. You can also reload the default settings if you need to. That is useful if for some reason you need to reset the settings to a known working state. The Save Settings button is there. It, of course, saves the settings with the configuration you have set in the program. There is a button that will allow you to clear the world data. This is useful when you are testing during development and you need to wipe all items and NPCs from the game world. Don't worry if you accidentally click that button. You are given the opportunity to cancel the operation. I have built in a couple fail safes. So before the data is deleted you have to prove you truly want to do this. If you want to see what you have to do to convince the Configurator you are serious about wiping the data then go ahead and click the button. Just don't check the check boxes in the dialog box that appears unless you are serious about wiping the data. Even then you have the opportunity to abort the operation. The last item to mention is the profiles section on the right side of the main user area. If you are working on multiple servers this gives you the opportunity to have a profile for each server. Each profile saves the location of the POL installation for that server and the UO installation for that server.
 
-After starting the Configurator, the default configuration files are loaded and these instructions are displayed. The first time you run the programme you need to tell the Configurator where your shard files are located. At the bottom of the window in the main user area you will see the text box under the heading Location of your POL directory Use the Browse button to the right to locate your POL directory. Just below the Load My Settings button you will see the “Location of your UO Installation” text box. Locate your UO installation directory using the browse button to the right.
+After starting the Configurator, the default configuration files are loaded and these instructions are displayed. The first time you run the program you need to tell the Configurator where your shard files are located. At the bottom of the window in the main user area you will see the text box under the heading Location of your POL directory Use the Browse button to the right to locate your POL directory. Just below the Load My Settings button you will see the “Location of your UO Installation” text box. Locate your UO installation directory using the browse button to the right.
 
 Remember, these are “directory selection” dialog boxes, not “open file dialog boxes”. When you see the directory for that contains the installation you are looking for, single click on the directory to highlight it. Then click on the “Select Folder” button. There is a tendency to double-click the directory as you might do with an “open file” dialog box. If you do that it will open the directory. If you think I am stating the obvious or over simplifying here I am not. When I am in a hurry I often make that mistake.
 
@@ -77,7 +79,7 @@ This file must be in the /config sub directory of any valid, enabled, package di
 
 The first six files must be in the proper directories.
 
-The programme will search for a uoclient.cfg in your POL installation file upon startup. 
+The program will search for a uoclient.cfg in your POL installation file upon startup. 
 
 If you are missing any of the required configuration files the Configurator will present you with a dialog box telling you which files are missing. You then have the option to use the default configuration files to replace any missing files. The Configurator will also check for the presence of an accounts.txt and a pol.txt file in your World data path directory. It will not verify the integrity of any of the files. It is just looking for files in the proper directories with the correct names. There is a memo field on that window with an explanation of the items in there.
 
@@ -85,7 +87,7 @@ A note about the default config files: The default config files may contain more
 
 However if you are certain your configuration files are up to date with all of the current settings then you can load your server's configuration files. 
 
-I am going to repeat this warning: Remember that the default settings are loaded when the Configurator starts. If you have previously used the Configurator to setup a server remember to click the “Load My Settings” button so that any custom settings for your server will be loaded in the programme. If you fail to do this, and you click the “Save Settings” button you will over write your settings with the default settings. I hate to have to repeat this but I have forgotten this once or twice and I wrote the programme :)
+I am going to repeat this warning: Remember that the default settings are loaded when the Configurator starts. If you have previously used the Configurator to setup a server remember to click the “Load My Settings” button so that any custom settings for your server will be loaded in the program. If you fail to do this, and you click the “Save Settings” button you will over write your settings with the default settings. I hate to have to repeat this but I have forgotten this once or twice and I wrote the program :)
 
 Using profiles.
 If you have multiple POL installations that you work with you can set-up profiles for each installation of POL. A profile saves the POL installation directory and UO installation directory. This enables switching between different installations of POL much easier. 
@@ -103,33 +105,35 @@ Also, when you switch from one POL installation to another, either by using the 
 Ok. If you are still with me I will describe in brief detail how to use the various pages
 
 The Facet Generation page.
-The facets are the various maps available in the game. For some reason unbeknownst to me, or the current POL developers, back when POL transitioned from version 095 to 096 and access to the other facets was added to POL, the developers at the time chose the word “realm” to refer to the different maps. This is important when writing eScript programmes, use realm and not facet in your programmes. I will use “facet” throughout this document when referring to the maps. That is the designation for the maps given by OSI/EA/Broadsword and thus why I chose to use it here.
+The facets are the various maps available in the game. For some reason unbeknownst to me, or the current POL developers, back when POL transitioned from version 095 to 096 and access to the other facets was added to POL, the developers at the time chose the word “realm” to refer to the different maps. This is important when writing eScript programs, use realm and not facet in your programs. I will use “facet” throughout this document when referring to the maps. That is the designation for the maps given by OSI/EA/Broadsword and thus why I chose to use it here.
 
-At the top left of the Facet Generation page you will see a button labelled Copy Required files If it is greyed out that means you haven't told the Configurator where your UO installation is. So if it's greyed out go and do that first. Click Copy Required files button to copy the files necessary for generating the facets. You will see the progress as the files are copied from your UO installation to your POL UO data files directory. The name of each file is also displayed.
+At the top left of the Facet Generation page you will see a button labeled Copy Required files If it is greyed out that means you haven't told the Configurator where your UO installation is. So if it's greyed out go and do that first. Click Copy Required files button to copy the files necessary for generating the facets. You will see the progress as the files are copied from your UO installation to your POL UO data files directory. The name of each file is also displayed. If you have previously copied the UO client files, you can tick the Required files are already copied checkbox. But only do that if you are certain that the files have previously been copied.
 
-Note: OSI/EA/Broadsword has started repacking the multis.mul and the multis.idx into a new file, MultiCollections.uop. Fortunately for us they seem to be still shipping the other two files with the UO client, for now anyway. This is something new and the addition to POL of the ability to read UOP files cannot read this new one because its format is not the same as other UOPs. Nando, a Core developer, is working on adding it. Also the UOP extractor I use with the Configurator does not properly extract the two multis files most likely because the author of that programme assumed the internal format of MultiCollection.uop was the same as the other UOP files. So it is certainly good that OSI is still shipping the older multis files.
+If you are using a newer client that uses the *.UOP file format you can save some time copying files by ticking the Copy only UOP, statics, and tiledata files.
 
-When you run the POL Configurator on a POL installation where you copied the client files in a previous session you will still need to copy the files to be able to use the other settings on the Facets page.
+Note: OSI/EA/Broadsword has started repacking the multis.mul and the multis.idx into a new file, MultiCollections.uop. Fortunately for us they seem to be still shipping the other two files with the UO client, for now anyway. This is something new and the addition to POL of the ability to read UOP files cannot read this new one because its format is not the same as other UOPs. Nando, a Core developer, is working on adding it. Also the UOP extractor I use with the Configurator does not properly extract the two multis files most likely because the author of that program assumed the internal format of MultiCollection.uop was the same as the other UOP files. So it is certainly good that OSI is still shipping the older multis files.
+
+Now, choose the UO expansion of the client you are using via the Select Your Expansion drop-down box. This will affect the map size setting under the Map Generation Settings group on this page. It will set the Maximum Art Tile ID setting and the UOFeatureEnable value on the Server Settings tab. And it will also copy the proper uoconvert.cfg file for your expansion to your POL root directory.
 
 Once that is done the next step is to build three files necessary for POL. These are multis.cfg, tiles.cfg, and landtiles.cfg. Below the Copy UO Files group you can build these files. Ensure that all three check boxes are checked, Build multis.cfg, Build tiles.cfg, and Build landtiles.cfg. Next click the Build the selected cfg files button. A console window will open showing that the files are being created.
 
 Now it's time to generate the facets.
-Just to the right of the Copy Required Files button you will see the map generation settings. UO has used two (2) different map sizes for Felucca and Trammel over the years. Prior to the Mondain's Legacy expansion the map size for those two maps was 6144 squares across by 4096 squares down (6144 on the X axis and 4096 on the Y axis). When Mondain's Legacy was released they increased the X axis map size to 7168 squares. So choose your map size using the combo box. Next decide which facets you want to build. There's a check box to select all or you can pick and choose using the individual check boxes. Now decide if you want to build the facets using the DIF files. Oh you ask, what are DIF files? They are files containing additional patches to the maps. Some are minor patches and some are major patches. DIF files make changes to the terrain and textures. I don't know what changes but I think the changes made to Magincia and (I think) Moonglow after Mondaiin's Legacy might be part of a DIF files patch information. Anyway there is a Select all DIFs check box or once again you can pick and choose which facet you want to build using DIFs. Once you have everything set the way you want it for building the facets just click the Build the selected facets button and once again a console window will open and uoconvert will build those facets you chose. The facets Felucca and Trammel have designations in parenthesis beside their proper names. That is because internally, thus in eScript programmes, POL uses the name “britannia” to refer to Felucca and britannia_alt to refer to Trammel. Do not ask me why. Again that decision was made during the development of POL version 096.
+Just to the right of the Copy Required Files button you will see the map generation settings. UO has used two (2) different map sizes for Felucca and Trammel over the years. Prior to the Mondain's Legacy expansion the map size for those two maps was 6144 squares across by 4096 squares down (6144 on the X axis and 4096 on the Y axis). When Mondain's Legacy was released they increased the X axis map size to 7168 squares. Under normal circumstances you should not need to change this setting. However, if you are using the larger Mondain’s Legacy (ML) map with a UO expansion released prior to Mondain’s Legacy you will need to set this to the larger ML map size. 
 
 Extracting the MULs.
 “To extract or not to extract. That is the question.” - Bill Speareshake.
 
 At some point the “powers that be” at UO headquarters moved from using the MUL file format to the UOP file format which packs the MUL and IDX files into a single file. There is no need to extract the MUL files any longer unless you want make changes to the client files. Using UO Fiddler developed by Turley you can modify the client files and add graphics, change skill names plus a plethora of other modifications. If you plan on changing the client files then you will want to extract the MUL files from the UOP files. If you are going to use the unmodified client files then you can go on without extracting the MUL files.
 
-This feature is a carryover in the Configurator from versions of POL prior to POL 100. Before version 100 POL did not have the capability of reading the UOP files that UO uses now to hold map and other data. Developer Nando implemented UOP capability in POL and now there is no need to extract the MUL files from the UOPs. I recently added the capability to repack the MULs into UOPs. The main use of this feature for developers would be if you plan on modifying the client files.
+This feature is a carryover in the Configurator from versions of POL prior to POL 100. Before version 100 POL did not have the capability of reading the UOP files that UO uses now in later client versions to hold map and other data. Developer Nando implemented UOP capability in POL and now there is no need to extract the MUL files from the UOPs. I recently added the capability to repack the MULs into UOPs. The main use of this feature for developers would be if you plan on modifying the client files.
 
 
 The eCompile page.
-eCompile is used to make the scripts that are human readable into the format that the POL Core will execute. As with the other configuration files eCompile has a number of settings. All of them are set to the defaults recommended by the POL Development Team. Each setting has a hint that will be displayed if you hover the mouse pointer over the setting. I am not going to cover the various settings here. That's what the hints are for. What I am going to cover are the eCompile buttons. The first button you see is labeled Compile modified Scripts and send output to the console, which will compile only those scripts you have modified since you last compiled your files. If this is the first time you are compiling your SRC files and you have no ECL files in your POL files, which will be the case if you are compiling a freshly downloaded Distro in a new POL installation then all files will be compiled. If however you have compiled the Distro and made some changes to some SRC files, then only those will be compiled. This button will allow eCompile to stop the compilation process if it encounters an error in one of your programmes (scripts). The console window will stay open until you press a key so you can see the error and where it was found.
+eCompile is used to make the scripts that are human readable into the format that the POL Core will execute. As with the other configuration files eCompile has a number of settings. All of them are set to the defaults recommended by the POL Development Team. Each setting has a hint that will be displayed if you hover the mouse pointer over the setting. I am not going to cover the various settings here. That's what the hints are for. What I am going to cover are the eCompile buttons. The first button you see is labeled Compile modified Scripts and send output to the console, which will compile only those scripts you have modified since you last compiled your files. If this is the first time you are compiling your SRC files and you have no ECL files in your POL files, which will be the case if you are compiling a freshly downloaded Distro in a new POL installation then all files will be compiled. If however you have compiled the Distro and made some changes to some SRC files, then only those will be compiled. This button will allow eCompile to stop the compilation process if it encounters an error in one of your programs (scripts). The console window will stay open until you press a key so you can see the error and where it was found.
 
 Note: In order for the Compile modified files process to work properly you MUST have the Create DEP files setting checked in the eCompile settings, which it is by default.
 
-The next button down from Compile updated Scripts and send output to the console. is Compile All Scripts and Send Output to ecompile.log. This will open a console window but you will see almost no output from eCompile because it is sending that output to a log file, ecompile.log. This option will compile all scripts and if eCompile encounters an error it will report it in the log file but will go on to the next programme to compile. It will be up to you to search the log file for errors. Please note that there is no output to the console while eCompile is compiling. Don't worry. It is still running and will finish. The ecompile.log file will be located in your POL Script Root Directory shown in the text box on the eCompile page.
+The next button down from Compile updated Scripts and send output to the console. is Compile All Scripts and Send Output to ecompile.log. This will open a console window but you will see almost no output from eCompile because it is sending that output to a log file, ecompile.log. This option will compile all scripts and if eCompile encounters an error it will report it in the log file but will go on to the next program to compile. It will be up to you to search the log file for errors. Please note that there is no output to the console while eCompile is compiling. Don't worry. It is still running and will finish. The ecompile.log file will be located in your POL Script Root Directory shown in the text box on the eCompile page.
 
 The last button is just labeled eCompile. It is for those people who wish to set some of eCompile's 'switches' that can over-ride the eCompile configuration settings. If you are just starting out you should use one of the other eCompile buttons until you are familiar with eCompile and its settings.
 
@@ -148,7 +152,7 @@ Warnings: These are messages that eCompile gives for things that are not critica
 
 POL Clean-up
 You will notice on the eCompile page is the POL Clean-up section.
-This section allows you to mass delete various files from your POL installation. There might be times when you want to do a fresh compile of all your scripts. In that situation you would check the first 5 check boxes, remove ECL, DEP, LST, DBG, and DBG.TXT files. You might want to save an archive of your shard. In which case you would check all of the boxes. Maybe you have just fixed a bug in a programme and you want to delete the debugging files then you would check LST, DBG, and DBG.TXT. There is a Remove Custom checkbox so you can specify a custom file type to delete. Just enter the filespec of the file type you want to delete in the text box and check the Remove Custom check box.
+This section allows you to mass delete various files from your POL installation. There might be times when you want to do a fresh compile of all your scripts. In that situation you would check the first 5 check boxes, remove ECL, DEP, LST, DBG, and DBG.TXT files. You might want to save an archive of your shard. In which case you would check all of the boxes. Maybe you have just fixed a bug in a program and you want to delete the debugging files then you would check LST, DBG, and DBG.TXT. There is a Remove Custom checkbox so you can specify a custom file type to delete. Just enter the filespec of the file type you want to delete in the text box and check the Remove Custom check box.
 
 Examples of possible filespecs are:
 *.zip - remove all zip files.
@@ -193,13 +197,13 @@ If you make any settings changes, remember to save them. You will see a message 
 Finally Running POL
 Once you have completed setting-up POL and adjusted the settings to fit your needs, you can run POL using the two buttons on the right side of the Configurator window. There are two large buttons, Test Launch POL and Run POL. Test Launch POL will launch POL but if for some reason POL stops and exits, the console will remain open until you press a key. This is to allow you to see any errors POL may have reported as the reason it stopped prematurely. There may be additional information contained in some of the log files in the log directory under your POL installation.
 
-You should use this button if you are starting POL for the first time or if you have added functionality to or removed it from your eScript programmes or made changes to any configuration files so that you can see any errors that your changes may have caused.
+You should use this button if you are starting POL for the first time or if you have added functionality to or removed it from your eScript programs or made changes to any configuration files so that you can see any errors that your changes may have caused.
 
 The other button Run POL can be used when you are certain POL can run without exiting due to an error. Please note that you can use the Test Launch POL button in either case but when you intentionally stop POL by pressing <control> c you will have to close the console window.
 
 
 
-I think I have covered the things you need to use the this programme.
+I think I have covered the things you need to use the the POL Configurator.
 
 I hope you find the POL Configurator useful.
 
@@ -215,3 +219,36 @@ Thanks,
 Yukiko
 
 Looking for that blessed hope, and the glorious appearing of the great God and our Saviour Jesus Christ  - Titus 2:13
+
+License and Disclaimer Iformation:
+The POL Configurator - A GUI configuration utility for the Penultima
+OnLine emulator.
+Copyright (C) 2022  Dan Gardner eMail: hopelives@outlook.com
+
+   This program is free software: you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation, either version 3 of the License, or
+   (at your option) any later version.
+
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+Please note that this program uses some third party extensions whose licenses
+may NOT be compatible with the GPL 3.0 license.
+Please review the synapse 4 and Legacy MULConverter 4 license for compatibility
+
+Disclaimer
+This program binary and its source code are provided free of charge. You may
+copy it, distribute it, and modify it within the limitations of the GPL 3
+license's provisions.
+
+It is provided As-Is. There are NO warranties
+either expressed, implied or infered as to its functionality, usability,
+usefulnes or operation. The author is not responsible for any loss of data,
+damage to property, hardware or software that may arise from the use of
+the POL Configurator.

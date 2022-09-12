@@ -1,0 +1,36 @@
+object FileCopyFrm: TFileCopyFrm
+  Left = 726
+  Height = 240
+  Top = 188
+  Width = 320
+  Caption = 'FileCopyFrm'
+  ClientHeight = 240
+  ClientWidth = 320
+  LCLVersion = '2.2.2.0'
+  object CopyMessageLabel: TLabel
+    Left = 56
+    Height = 15
+    Top = 144
+    Width = 86
+    Caption = 'Copying Files . . '
+    ParentColor = False
+  end
+  object FilesCopiedOkBtn: TButton
+    Left = 120
+    Height = 25
+    Top = 176
+    Width = 75
+    Caption = 'Ok'
+    OnClick = FilesCopiedOkBtnClick
+    TabOrder = 0
+  end
+  object FileCopyProgBar: TProgressBar
+    Left = 60
+    Height = 20
+    Top = 97
+    Width = 212
+    Max = 59
+    Step = 1
+    TabOrder = 1
+  end
+end

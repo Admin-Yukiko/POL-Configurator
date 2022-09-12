@@ -1,0 +1,203 @@
+object FormMissingFiles: TFormMissingFiles
+  Left = 850
+  Height = 448
+  Top = 426
+  Width = 719
+  Caption = 'Missing Files Notification'
+  ClientHeight = 448
+  ClientWidth = 719
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -13
+  Font.Name = 'Liberation Serif'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  OnCreate = FormCreate
+  LCLVersion = '2.2.2.0'
+  object UOClientCfgCheckBox: TCheckBox
+    Left = 412
+    Height = 19
+    Top = 192
+    Width = 83
+    Caption = 'uoclient.cfg'
+    OnChange = UOClientCfgCheckBoxChange
+    TabOrder = 0
+  end
+  object ServersCfgCheckBox: TCheckBox
+    Left = 412
+    Height = 19
+    Top = 120
+    Width = 79
+    Caption = 'servers.cfg'
+    TabOrder = 1
+  end
+  object ServspecoptCfgCheckBox: TCheckBox
+    Left = 412
+    Height = 19
+    Top = 144
+    Width = 106
+    Caption = 'servspecopt.cfg'
+    TabOrder = 2
+  end
+  object WatchCfgCheckBox: TCheckBox
+    Left = 412
+    Height = 19
+    Top = 168
+    Width = 72
+    Caption = 'watch.cfg'
+    TabOrder = 3
+  end
+  object EcompileCfgCheckBox: TCheckBox
+    Left = 412
+    Height = 19
+    Top = 72
+    Width = 87
+    Caption = 'ecompile.cfg'
+    TabOrder = 4
+  end
+  object CombatCfgCheckBox: TCheckBox
+    Left = 412
+    Height = 19
+    Top = 48
+    Width = 79
+    Caption = 'combat.cfg'
+    TabOrder = 5
+  end
+  object MissingFilesMemo: TMemo
+    Left = 43
+    Height = 361
+    Top = 48
+    Width = 285
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Lines.Strings = (
+      'The check boxes list the files necessary for POL to run or to be configured properly. You have been shown this window because some, or all, of these files are missing from your POL installation. The boxes that are checked indicate the missing files. The Configurator can create these files with default settings for you. If you would like the Configurator to do that then click the "Yes" button and they will be created. Click the "No" button if you do not want the Configurator to create these files. It is highly recommended that if these files are missing that you let the Configurator create them to ensure that they contain all of the current settings for POL. You can also uncheck the files you do not want created but keep in mind that POL may not run without some of these files and the Configurator will exit if all of these files are not present.'
+      ''
+      'If you are unsure whether the files that DO exist in your POL installation are up to date with the current list of settings you can check all of the boxes for the *.cfg files and the Configurator will replace all of POL''s required files with the default settings. This is recommended the first time you use the Configurator on a POL installation even if you are certain your settings files have the current configuration files. POL has a myriad of settings and though new ones are not added often, new settings may not get added to your own files unless you are persistent in checking the core-changes.txt file included with each Core update. Also, if you are missing any of these files and you do not allow the Configurator to create the missing files it will abort and close. You must have valid copies of these files in your POL installation for the Configurator to run. The Configurator will not run without all of these necessary files. It will pop-up a message telling you so if you leave this dialog box without letting the programme replace the missing files.'
+      ''
+      'If you are missing the uoclient.cfg file you will also need to tell the Configurator where you want to save the file. The directory you save it in must have a valid, enabled, pkg.cfg file in that folder.'
+      ''
+      'One last thing. If you are starting a new server it is highly recommended that you check every check box on this window and let the Configurator create the default files for you. The settings in the default files are configured to work with the current client and POL Core version.'
+    )
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 6
+  end
+  object Label1: TLabel
+    Left = 43
+    Height = 15
+    Top = 28
+    Width = 195
+    Caption = 'Why am I being shown this window?'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 412
+    Height = 15
+    Top = 28
+    Width = 79
+    Caption = 'Missing Files:'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 380
+    Height = 15
+    Top = 351
+    Width = 299
+    Caption = 'Shall I install the default files for those checked above?'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object YesInstallFilesBtn: TButton
+    Left = 431
+    Height = 25
+    Top = 393
+    Width = 75
+    Caption = 'Yes'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = YesInstallFilesBtnClick
+    ParentFont = False
+    TabOrder = 7
+  end
+  object NoInstallFilesBtn: TButton
+    Left = 563
+    Height = 25
+    Top = 393
+    Width = 75
+    Caption = 'No'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Liberation Serif'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = NoInstallFilesBtnClick
+    ParentFont = False
+    TabOrder = 8
+  end
+  object POLCfgCheckBox: TCheckBox
+    Left = 412
+    Height = 19
+    Top = 96
+    Width = 57
+    Caption = 'pol.cfg'
+    TabOrder = 9
+  end
+  object UOClientSaveBtn: TButton
+    Left = 617
+    Height = 25
+    Top = 274
+    Width = 75
+    Caption = 'Browse'
+    OnClick = UOClientSaveBtnClick
+    TabOrder = 10
+  end
+  object UOClientDirEdit: TEdit
+    Left = 412
+    Height = 23
+    Top = 274
+    Width = 196
+    ReadOnly = True
+    TabOrder = 11
+  end
+  object UOClientLabel: TLabel
+    Left = 412
+    Height = 45
+    Top = 224
+    Width = 245
+    Caption = 'To place the uoclient.cfg file you must specify'#13#10'a valid enabled package directory containing'#13#10'a pkg.cfg file.'
+    ParentColor = False
+  end
+  object SelectDirectoryDialog1: TSelectDirectoryDialog
+    Left = 600
+    Top = 16
+  end
+end
